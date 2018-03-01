@@ -581,9 +581,15 @@ extern "C" int jailbreak(void)
 {
     tihmstar::offsetfinder64 fi("/System/Library/Caches/com.apple.kernelcaches/kernelcache");
     
-    offsets_t *off = get_offsets(&fi); // XXX: embed in UI & do at launch
-    if(!off)
-        return -1;
+    offsets_t *off = NULL;
+    try {
+        off = get_offsets(&fi);
+    } catch (tihmstar::exception &e) {
+        LOG("Failed jailbreak!: %s [%u]", e.what(), e.code());
+        NSString *err = [NSString stringWithFormat:@"Offset Error: %d",e.code()];
+        postProgress(err);
+    }
+    
     LOG("v0rtex\n");
     suspend_all_threads();
     if(v0rtex(off, &cb, &fi)){

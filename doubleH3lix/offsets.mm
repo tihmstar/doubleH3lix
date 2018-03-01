@@ -12,12 +12,9 @@ static bool didInit = false;
 extern "C" offsets_t* get_offsets(void *fi_)
 {
     tihmstar::offsetfinder64 *fi = static_cast<tihmstar::offsetfinder64 *>(fi_);
-    if (didInit)
-        return &offs;
-    try
-    {
+    if (!didInit){
         offs.base =                             0xfffffff007004000;
-
+        
         offs.sizeof_task =                      (kptr_t)fi->find_sizeof_task();
         offs.task_itk_self =                    (kptr_t)fi->find_task_itk_self();
         offs.task_itk_registered =              (kptr_t)fi->find_task_itk_registered();
@@ -29,12 +26,12 @@ extern "C" offsets_t* get_offsets(void *fi_)
         offs.iouserclient_ipc =                 (kptr_t)fi->find_iouserclient_ipc();
         offs.vtab_get_retain_count =            (kptr_t)fi->find_vtab_get_retain_count();
         offs.vtab_get_external_trap_for_index = (kptr_t)fi->find_vtab_get_external_trap_for_index();
-
+        
         offs.zone_map =                         (kptr_t)fi->find_zone_map();
         offs.kernel_map =                       (kptr_t)fi->find_kernel_map();
         offs.kernel_task =                      (kptr_t)fi->find_kernel_task();
         offs.realhost =                         (kptr_t)fi->find_realhost();
-
+        
         offs.copyin =                           (kptr_t)fi->find_copyin();
         offs.copyout =                          (kptr_t)fi->find_copyout();
         offs.chgproccnt =                       (kptr_t)fi->find_chgproccnt();
@@ -44,13 +41,7 @@ extern "C" offsets_t* get_offsets(void *fi_)
         offs.ipc_port_make_send =               (kptr_t)fi->find_ipc_port_make_send();
         offs.osserializer_serialize =           (kptr_t)fi->find_osserializer_serialize();
         offs.rop_ldr_x0_x0_0x10 =               (kptr_t)fi->find_rop_ldr_x0_x0_0x10();
-
         didInit = true;
-        return &offs;
     }
-    catch(tihmstar::exception &e)
-    {
-        LOG("Failed to get offsets: %s [%u]", e.what(), e.code());
-    }
-    return NULL;
+    return &offs;
 }
