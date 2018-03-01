@@ -1,4 +1,5 @@
 doubleH3lix hashes signed by tihmstar:
+d3f437dea01ea1d66f90d6dc563a7ae19667ff783a41ec38d7236c8d68f987d2  doubleH3lix-RC4.ipa
 b6dc9377d7e748a860f67b16ed4b9732d52fcefe8cfcc34ee0b106b52ff5315d  doubleH3lix-RC3.ipa
 9d82635aa8573b21e3fd998b261fa75748252d4d67d35ac3cafe63ef3e9ab67d  doubleH3lix-RC2.ipa
 bd7e447faf9d2f75c3fc6ebb38d562ae9bd40832a62b7ffd9f9acfa0bf6d400c  doubleH3lix-RC1.ipa
