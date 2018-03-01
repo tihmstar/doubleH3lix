@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EGB-Uo-0QW">
+                                <rect key="frame" x="105" y="303.5" width="165" height="59"/>
+                                <color key="backgroundColor" red="0.0" green="0.76078431372549016" blue="0.93725490196078431" alpha="0.66588184931506844" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="37"/>
+                                <state key="normal" title="  jailbreak  ">
+                                    <color key="titleColor" red="0.14508947730064392" green="0.14518174529075623" blue="0.14099046587944031" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbD-au-i2P"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current status" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-A3-Dsw">
+                                <rect key="frame" x="99.5" y="314.5" width="177.5" height="38"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="nZB-GU-GcB">
+                                <rect key="frame" x="32" y="52" width="311" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nZB-GU-GcB" secondAttribute="height" multiplier="15:8" id="gIo-5D-L1b"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4g-H7-kgJ">
+                                <rect key="frame" x="16" y="522.5" width="343" height="128.5"/>
+                                <string key="text">iOS 10.x jailbreak by 
+tihmstar and siguza
+
+Special thanks to
+qwertyoruiop
+jk9357</string>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only for devices with headphone jack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pV-2c-3uh">
+                                <rect key="frame" x="8" y="496.5" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y4g-H7-kgJ" secondAttribute="trailing" constant="16" id="2nT-f2-WNU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3pV-2c-3uh" secondAttribute="trailing" constant="8" id="9y8-bi-Ps8"/>
+                            <constraint firstItem="3pV-2c-3uh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AzC-dO-Zzy"/>
+                            <constraint firstItem="y4g-H7-kgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Bzm-WR-fgq"/>
+                            <constraint firstItem="I2C-A3-Dsw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G0G-mG-kTr"/>
+                            <constraint firstItem="nZB-GU-GcB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Pwl-eC-BLz"/>
+                            <constraint firstItem="EGB-Uo-0QW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R3y-Yz-PHw"/>
+                            <constraint firstItem="3pV-2c-3uh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="RBa-yz-71o"/>
+                            <constraint firstItem="nZB-GU-GcB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQI-9F-4X1"/>
+                            <constraint firstItem="I2C-A3-Dsw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZZD-7g-Xaa"/>
+                            <constraint firstItem="EGB-Uo-0QW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jG6-8o-0ef"/>
+                            <constraint firstItem="nZB-GU-GcB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="ky2-XV-6jx"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nZB-GU-GcB" secondAttribute="trailing" constant="32" id="mZ7-uC-nsm"/>
+                            <constraint firstItem="y4g-H7-kgJ" firstAttribute="top" secondItem="3pV-2c-3uh" secondAttribute="bottom" constant="5" id="tOl-09-VhB"/>
+                            <constraint firstAttribute="bottom" secondItem="y4g-H7-kgJ" secondAttribute="bottom" constant="16" id="yBV-oJ-AKu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gobtn" destination="EGB-Uo-0QW" id="vgX-bO-bRj"/>
+                        <outlet property="statusLabel" destination="I2C-A3-Dsw" id="Te2-EX-jEK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner.png" width="5008" height="2334"/>
+    </resources>
+</document>
