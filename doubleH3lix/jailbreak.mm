@@ -472,7 +472,12 @@ remappage[remapcnt++] = (x & (~PMK));\
     kernelpatches.push_back(fi->find_amfi_patch_offsets());
     kernelpatches.push_back(fi->find_cs_enforcement_disable_amfi());
     kernelpatches.push_back(fi->find_amfi_substrate_patch());
-    kernelpatches.push_back(fi->find_sandbox_patch());
+    
+    try {
+        kernelpatches.push_back(fi->find_sandbox_patch());
+    } catch (tihmstar::exception &e) {
+        NSLog(@"WARNING: failed to find sandbox_patch! Assuming we're on x<10.3 and continueing anyways!");
+    }
 
     
     auto dopatch = [&](tihmstar::patchfinder64::patch &patch){
