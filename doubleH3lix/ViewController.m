@@ -99,18 +99,13 @@ double uptime(){
                 sleep(1);
             }
 
-            /*XXX if (!info_to_target_environment(name.version)){
-                postProgress(@"Error can't find offsets!");
-                return;
-            }*/
-
             postProgress(@"running exploit");
             usleep(USEC_PER_SEC/100);
-            jailbreak();
-
-            dispatch_sync(dispatch_get_main_queue(), ^(void){
-                [self.gobtn setTitle:@"done jb" forState:UIControlStateNormal];
-            });
+            if (!jailbreak()){
+                dispatch_sync(dispatch_get_main_queue(), ^(void){
+                    [self.gobtn setTitle:@"done jb" forState:UIControlStateNormal];
+                });
+            }
         }
     });
 }

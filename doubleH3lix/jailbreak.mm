@@ -593,6 +593,12 @@ extern "C" int jailbreak(void)
         LOG("Failed jailbreak!: %s [%u]", e.what(), e.code());
         NSString *err = [NSString stringWithFormat:@"Offset Error: %d",e.code()];
         postProgress(err);
+        return -1;
+    }catch (std::exception &e) {
+        LOG("Failed jailbreak!: %s", e.what());
+        NSString *err = [NSString stringWithFormat:@"FATAL offset Error:\n%s",e.what()];
+        postProgress(err);
+        return -1;
     }
     
     LOG("v0rtex\n");
