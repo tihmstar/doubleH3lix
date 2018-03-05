@@ -142,6 +142,8 @@ namespace tihmstar {
         patchfinder64::patch find_amfi_substrate_patch();
         patchfinder64::patch find_sandbox_patch();
         patchfinder64::loc_t find_sbops();
+        patchfinder64::patch find_nonceEnabler_patch();
+        
         
         /*------------------------ KPP bypass -------------------------- */
         patchfinder64::loc_t find_gPhysBase();
@@ -163,4 +165,3 @@ namespace tihmstar {
 
 
 #endif /* offsetfinder64_hpp */
-

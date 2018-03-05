@@ -472,6 +472,7 @@ remappage[remapcnt++] = (x & (~PMK));\
     kernelpatches.push_back(fi->find_amfi_patch_offsets());
     kernelpatches.push_back(fi->find_cs_enforcement_disable_amfi());
     kernelpatches.push_back(fi->find_amfi_substrate_patch());
+    kernelpatches.push_back(fi->find_nonceEnabler_patch());
     
     try {
         kernelpatches.push_back(fi->find_sandbox_patch());
