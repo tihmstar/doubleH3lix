@@ -1,0 +1,3 @@
+[submodule "external/liboffsetfinder64"]
+	path = external/liboffsetfinder64
+	url = https://github.com/tihmstar/liboffsetfinder64/

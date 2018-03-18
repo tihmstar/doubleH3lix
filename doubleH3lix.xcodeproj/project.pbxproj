@@ -35,7 +35,6 @@
 		6848D0FE203CE91700A0FFE2 /* v0rtex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v0rtex.h; sourceTree = "<group>"; };
 		6848D0FF203CE91700A0FFE2 /* v0rtex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = v0rtex.m; sourceTree = "<group>"; };
 		6848D103203CE93100A0FFE2 /* liboffsetfinder64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liboffsetfinder64.a; path = doubleH3lix/liboffsetfinder64.a; sourceTree = "<group>"; };
-		6848D105203CE95200A0FFE2 /* liboffsetfinder64.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = liboffsetfinder64.hpp; sourceTree = "<group>"; };
 		68805417203CEB060003A817 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
 		87149C6C204872DB009658CA /* Cydia-10.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; name = "Cydia-10.tar"; path = "doubleH3lix/jbresources/Cydia-10.tar"; sourceTree = "<group>"; };
 		8757D090203CF2CB00B3A566 /* libapple_crypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libapple_crypto.tbd; path = usr/lib/libapple_crypto.tbd; sourceTree = SDKROOT; };
@@ -130,7 +129,6 @@
 				6848D0FD203CE91700A0FFE2 /* offsets.mm */,
 				6848D0FE203CE91700A0FFE2 /* v0rtex.h */,
 				6848D0FF203CE91700A0FFE2 /* v0rtex.m */,
-				6848D105203CE95200A0FFE2 /* liboffsetfinder64.hpp */,
 				87F9E9982039C51900C90C05 /* Main.storyboard */,
 				87F9E99B2039C51900C90C05 /* Assets.xcassets */,
 				87F9E99D2039C51900C90C05 /* LaunchScreen.storyboard */,
@@ -363,12 +361,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/external/liboffsetfinder64/include";
 				INFOPLIST_FILE = doubleH3lix/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/doubleH3lix",
+					"$(PROJECT_DIR)/doubleH3lix/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.doubleH3lix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,12 +387,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/external/liboffsetfinder64/include";
 				INFOPLIST_FILE = doubleH3lix/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/doubleH3lix",
+					"$(PROJECT_DIR)/doubleH3lix/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.doubleH3lix;
 				PRODUCT_NAME = "$(TARGET_NAME)";

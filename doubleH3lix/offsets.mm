@@ -4,7 +4,7 @@
 
 #include "common.h"             // LOG, kptr_t
 #include "offsets.h"
-#include "liboffsetfinder64.hpp"
+#include <liboffsetfinder64/liboffsetfinder64.hpp>
 
 static offsets_t offs;
 static bool didInit = false;

@@ -44,7 +44,7 @@ extern int (*dsystem)(const char *);
 #include "sbops.h"
 }
 #include <vector>
-#include "liboffsetfinder64.hpp"
+#include <liboffsetfinder64/liboffsetfinder64.hpp>
 
 #define postProgress(prg) [[NSNotificationCenter defaultCenter] postNotificationName: @"JB" object:nil userInfo:@{@"JBProgress": prg}]
 
