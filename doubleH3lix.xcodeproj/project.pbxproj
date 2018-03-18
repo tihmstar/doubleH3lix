@@ -25,7 +25,6 @@
 		87F9E9972039C51900C90C05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F9E9962039C51900C90C05 /* ViewController.m */; };
 		87F9E99C2039C51900C90C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F9E99B2039C51900C90C05 /* Assets.xcassets */; };
 		87F9E9A22039C51900C90C05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F9E9A12039C51900C90C05 /* main.m */; };
-		87F9E9AA2039C5AC00C90C05 /* jbresources in Resources */ = {isa = PBXBuildFile; fileRef = 87F9E9A82039C5AB00C90C05 /* jbresources */; };
 		87F9E9AD2039C66500C90C05 /* jailbreak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87F9E9AC2039C66500C90C05 /* jailbreak.mm */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		87F9E99E2039C51900C90C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87F9E9A02039C51900C90C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87F9E9A12039C51900C90C05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		87F9E9A82039C5AB00C90C05 /* jbresources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jbresources; sourceTree = "<group>"; };
 		87F9E9A92039C5AB00C90C05 /* ui resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ui resources"; sourceTree = "<group>"; };
 		87F9E9AC2039C66500C90C05 /* jailbreak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = jailbreak.mm; sourceTree = "<group>"; };
 		87F9E9AE2039C66D00C90C05 /* jailbreak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jailbreak.h; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				87F9E99B2039C51900C90C05 /* Assets.xcassets */,
 				87F9E99D2039C51900C90C05 /* LaunchScreen.storyboard */,
 				87F9E9A02039C51900C90C05 /* Info.plist */,
-				87F9E9A82039C5AB00C90C05 /* jbresources */,
 				87F9E9A92039C5AB00C90C05 /* ui resources */,
 				87F9E9A12039C51900C90C05 /* main.m */,
 			);
@@ -206,7 +203,6 @@
 				87149C6D204872DB009658CA /* Cydia-10.tar in Resources */,
 				875D1310203F4215007B798C /* launchctl in Resources */,
 				875D130A203F41FA007B798C /* banner.png in Resources */,
-				87F9E9AA2039C5AC00C90C05 /* jbresources in Resources */,
 				872C2D6C203EE37600929D9E /* Main.storyboard in Resources */,
 				87EEF947203F188800663566 /* ui resources in Resources */,
 				8786D4FB203E12F900962200 /* LaunchScreen.storyboard in Resources */,
